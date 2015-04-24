@@ -1,17 +1,29 @@
 context = describe;
+/*
+// WORD SELECTOR TESTS:
+    describe("TABU´s word selector function", function(){
+    it("picks a random card", function(){
+        var carddeck = {elefante: ["trompa", "grande", "dumbo", "orejas"],
+            pingpong: ["mesa", "tenis", "red", "pelota"],
+            italia: ["país", "pasta", "pizza", "europa"],
+            sol: ["día", "astro", "luz", "calor"]};
+        var result = pickRandomCardKey(carddeck);
+            expect(result).toBe(elefante || pingpong || italia || sol); 
+    });
 
-// production code here:
-function containsTabuWord(recognizedSentence, tabuWords){
-    var sentence_array = recognizedSentence.split(" ");
-    var i;
-    for (i = 0; i < sentence_array.length; i++){
-        if (tabuWords.indexOf(sentence_array[i]) > -1) return true;
-    }    
-    return false; 
-}
 
-// tests:
 
+
+
+
+});
+*/
+
+
+
+
+
+// VALIDATOR TESTS:
   describe("tabu's validator function", function(){
     it("knows that sentence contains tabu word", function(){
         var result = containsTabuWord("monkey", ["monkey"]);

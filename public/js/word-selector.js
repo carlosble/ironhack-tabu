@@ -52,4 +52,4 @@ function getCard(result) {
 
 
 	
-}
+
