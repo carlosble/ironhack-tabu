@@ -2,11 +2,12 @@ context = describe;
 
 // production code here:
 function containsTabuWord(recognizedSentence, tabuWords){
-    
-    if (tabuWords.indexOf(recognizedSentence) > -1){
-      return true;
-    }; 
-    return false;  
+    var sentence_array = recognizedSentence.split(" ");
+        if (tabuWords.indexOf(sentence_array[0]) > -1 ||
+            tabuWords.indexOf(sentence_array[1]) > -1){
+          return true;
+        }; 
+        return false; 
 }
 
 
