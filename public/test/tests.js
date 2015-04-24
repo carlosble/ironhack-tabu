@@ -1,7 +1,5 @@
-context = describe;
-
 // WORD SELECTOR TESTS:
-    describe("TABU´s word selector function", function(){
+describe("TABU´s word selector function", function(){
     it("picks a random card from deck", function(){
         var carddeck = {elefante: ["trompa", "grande", "dumbo", "orejas"],
             pingpong: ["mesa", "tenis", "red", "pelota"],
@@ -19,16 +17,11 @@ context = describe;
         var expectedresult = ["trompa", "grande", "dumbo", "orejas","elefante"];
         expect(getCard('elefante')).toEqual(expectedresult);
     });
-
 });
 
 
-
-
-
-
 // VALIDATOR TESTS:
-  describe("tabu's validator function", function(){
+describe("tabu's validator function", function(){
     it("knows that sentence contains tabu word", function(){
         var result = containsTabuWord("monkey", ["monkey"]);
         expect(result).toBeTruthy(); 
@@ -59,8 +52,7 @@ context = describe;
         var result = containsTabuWord("spider cat monkey true", ["dog", "monkey"]);
         expect(result).toBeTruthy(); 
     });
-
-    
-  });
+   
+});
 
   
