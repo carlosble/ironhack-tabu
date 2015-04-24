@@ -3,10 +3,10 @@ context = describe;
 // production code here:
 function containsTabuWord(recognizedSentence, tabuWords){
     var sentence_array = recognizedSentence.split(" ");
-    if (tabuWords.indexOf(sentence_array[0]) > -1) return true;
-    if (tabuWords.indexOf(sentence_array[1]) > -1) return true;
-    if (tabuWords.indexOf(sentence_array[2]) > -1) return true;
-        
+    var i;
+    for (i = 0; i < 3; i++){
+        if (tabuWords.indexOf(sentence_array[i]) > -1) return true;
+    }    
     return false; 
 }
 
