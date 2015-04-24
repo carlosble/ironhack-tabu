@@ -15,7 +15,10 @@ context = describe;
                    result ==="sol").toBeTruthy(); 
     });
 
-
+    it("adds the name of the card in the taboo words", function(){
+        var expectedresult = ["trompa", "grande", "dumbo", "orejas","elefante"];
+        expect(getCard('elefante')).toEqual(expectedresult);
+    });
 
 });
 
