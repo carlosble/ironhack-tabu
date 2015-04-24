@@ -1,23 +1,24 @@
 context = describe;
-/*
+
 // WORD SELECTOR TESTS:
     describe("TABU´s word selector function", function(){
-    it("picks a random card", function(){
+    it("picks a random card from deck", function(){
         var carddeck = {elefante: ["trompa", "grande", "dumbo", "orejas"],
             pingpong: ["mesa", "tenis", "red", "pelota"],
             italia: ["país", "pasta", "pizza", "europa"],
             sol: ["día", "astro", "luz", "calor"]};
         var result = pickRandomCardKey(carddeck);
-            expect(result).toBe(elefante || pingpong || italia || sol); 
+
+            expect(result === "elefante" || 
+                   result === "pingpong" ||
+                   result === "italia" || 
+                   result ==="sol").toBeTruthy(); 
     });
 
 
 
-
-
-
 });
-*/
+
 
 
 
