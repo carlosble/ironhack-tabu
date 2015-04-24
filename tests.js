@@ -10,7 +10,6 @@ function containsTabuWord(recognizedSentence, tabuWords){
     return false; 
 }
 
-
 // tests:
 
   describe("tabu's validator function", function(){
@@ -35,10 +34,16 @@ function containsTabuWord(recognizedSentence, tabuWords){
         expect(result).toBeTruthy(); 
     });
 
-     it("know that a tabu word is present in sentence with more than one word", function(){
+    it("know that a tabu word is present in sentence with more than one word", function(){
         var result = containsTabuWord("spider cat monkey ", ["dog","monkey"]);
         expect(result).toBeTruthy(); 
     });
+    
+    it("know that a tabu word is present in sentence with more than one word", function(){
+        var result = containsTabuWord("spider cat monkey true", ["dog", "monkey"]);
+        expect(result).toBeTruthy(); 
+    });
+
     
   });
 
