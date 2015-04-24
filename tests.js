@@ -2,6 +2,7 @@ context = describe;
 
 // production code here:
 function containsTabuWord(recognizedSentence, tabuWords){
+    return true;
 }
 
 
