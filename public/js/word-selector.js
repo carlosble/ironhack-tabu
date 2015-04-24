@@ -1,26 +1,26 @@
-$( document ).ready(function() {
-    $("#start").on('click', function(param1){
-		console.log(param1);
-		var targetBox = $("#result");
-		var sourceText = $("#username").val();
-		var reversedText = sourceText.split("").reverse().join("");
-		targetBox.val(reversedText);
-	});
-	var originalSize = $("#username").css("font-size");
-	$("#username").on('mouseover', function(){
-		console.log("hi");
-		$(this).css("font-size", "200%");
-	});
+// $( document ).ready(function() {
+//     $("#start").on('click', function(param1){
+// 		console.log(param1);
+// 		var targetBox = $("#result");
+// 		var sourceText = $("#username").val();
+// 		var reversedText = sourceText.split("").reverse().join("");
+// 		targetBox.val(reversedText);
+// 	});
+// 	var originalSize = $("#username").css("font-size");
+// 	$("#username").on('mouseover', function(){
+// 		console.log("hi");
+// 		$(this).css("font-size", "200%");
+// 	});
 	
-	$("#username").on('mouseleave', function(){
-		console.log("bye");
-		$(this).css("font-size",originalSize)
-	});
+// 	$("#username").on('mouseleave', function(){
+// 		console.log("bye");
+// 		$(this).css("font-size",originalSize)
+// 	});
 
 
 
 
-});
+// });
 
 
 
