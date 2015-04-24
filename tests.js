@@ -22,7 +22,12 @@ function containsTabuWord(recognizedSentence, tabuWords){
         expect(result).toBeFalsy(); 
     });
     
-  });
 
+    it("know that the tabu word is present in the recognized sentence", function(){
+        var result = containsTabuWord("monkey", ["dog","monkey"]);
+        expect(result).toBeTruthy(); 
+    });
+    
+  });
 
   
