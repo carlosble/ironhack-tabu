@@ -2,7 +2,8 @@ context = describe;
 
 // production code here:
 function containsTabuWord(recognizedSentence, tabuWords){
-    if (recognizedSentence === tabuWords[0]){
+    
+    if (tabuWords.indexOf(recognizedSentence) > -1){
       return true;
     }; 
     return false;  
