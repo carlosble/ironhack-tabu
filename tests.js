@@ -4,7 +4,8 @@ context = describe;
 function containsTabuWord(recognizedSentence, tabuWords){
     var sentence_array = recognizedSentence.split(" ");
         if (tabuWords.indexOf(sentence_array[0]) > -1 ||
-            tabuWords.indexOf(sentence_array[1]) > -1){
+            tabuWords.indexOf(sentence_array[1]) > -1 ||
+            tabuWords.indexOf(sentence_array[2]) > -1){
           return true;
         }; 
         return false; 
