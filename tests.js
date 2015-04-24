@@ -28,6 +28,11 @@ function containsTabuWord(recognizedSentence, tabuWords){
         var result = containsTabuWord("monkey", ["dog","monkey"]);
         expect(result).toBeTruthy(); 
     });
+
+    it("know that a tabu word is present in sentence with more than one word", function(){
+        var result = containsTabuWord("spider monkey", ["dog","monkey"]);
+        expect(result).toBeTruthy(); 
+    });
     
   });
 
