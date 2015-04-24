@@ -49,7 +49,3 @@ function getCard(result) {
 }
 
 
-
-
-	
-}

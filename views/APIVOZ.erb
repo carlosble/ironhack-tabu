@@ -8,7 +8,12 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/jumbotron.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
-    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/lib/jquery-2.1.3.min.js"></script>
+<<<<<<< HEAD
+=======
+    <script src="../js/counter.js"></script>
+
+>>>>>>> f0a66afa415c99ed98d1e12d70430b9170ab0acd
   </head>
 
   <body>
@@ -33,14 +38,14 @@
             <span class="badge">3</span>
           </li>
          </ul>
-        <p><a class="btn btn-lg btn-warning button-start" href="#" role="button">Jugar</a></p>
+        <p><a class="btn btn-lg btn-warning button-start" href="#" role="button" id="play-button">Jugar</a></p>
       </div>
 
       <div class="row marketing">
 
         <div class="col-lg-8">
-          <div class="tabu-key"></div>
-           <div class="tabu-words"></div>
+          <div id= "tabu-key" class="tabu-key" style="font-weight: bold"></div>
+           <div id= "tabu-words" class="tabu-words"></div>
           <p><a class="btn btn-lg btn-success button-win" href="#" role="button">Habéis acertado!!</a></p>
         </div>
 
@@ -50,9 +55,16 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; Company 2014</p>
+        <p>&copy; Company 2015</p>
       </footer>
 
     </div> <!-- /container -->
+        <script>
+        counter();
+        </script>
+
   </body>
 </html>
+
+    <script src="../js/word-selector.js"></script>
+    <script src="../js/apivoz.js"></script>
