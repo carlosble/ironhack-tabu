@@ -3,14 +3,11 @@ context = describe;
 // production code here:
 function containsTabuWord(recognizedSentence, tabuWords){
     var sentence_array = recognizedSentence.split(" ");
-        var isTabuInSentence = tabuWords.indexOf(sentence_array[0]) > -1 ||
-            tabuWords.indexOf(sentence_array[1]) > -1 ||
-            tabuWords.indexOf(sentence_array[2]) > -1;
-
-        if (isTabuInSentence){
-          return true;
-        }; 
-        return false; 
+    if (tabuWords.indexOf(sentence_array[0]) > -1) return true;
+    if (tabuWords.indexOf(sentence_array[1]) > -1) return true;
+    if (tabuWords.indexOf(sentence_array[2]) > -1) return true;
+        
+    return false; 
 }
 
 
