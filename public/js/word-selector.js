@@ -49,10 +49,3 @@ function getCard(result) {
 }
 
 
-<<<<<<< HEAD
-=======
-
-
-	
-
->>>>>>> f0a66afa415c99ed98d1e12d70430b9170ab0acd
